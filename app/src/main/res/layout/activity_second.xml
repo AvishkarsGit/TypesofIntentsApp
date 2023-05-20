@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicit Intent"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_justified_paragraph"
+        android:text="- Explicit Intents are used to connect the application internally.
+\n- In Explicit we use the name of component which will be affected by Intent.
+\n- For Example: If we know class name then we can navigate the app from One Activity to another
+activity using Intent.
+\n- Explicit Intent work internally within an application to perform navigation and data transfer. \nThe
+below given code snippet will help you understand the concept of Explicit Intents
+\nIntent intent = new Intent(getApplicationContext(), SecondActivity.class);
+startActivity(intent);
+\n- In above example, SecondActivity is the JAVA class name where the activity will now be
+navigated.
+\n- Android Explicit Intent Example: Let's see the simple example of android explicit example that
+calls one activity from another and vice versa"
+        android:textColor="@color/purple_700"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
